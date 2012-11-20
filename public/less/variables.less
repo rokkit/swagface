@@ -1,0 +1,61 @@
+//FONTS
+//--------------------------
+@inputHeight:                   @baseLineHeight + 10px;
+
+@baseFontFamily:                 Casper;
+@baseLineHeight:                 20px;
+@textColor:                      #FFF;
+@bodyBackground:                 #222;
+@baseFontSize:                   14px;
+
+
+//LINKS
+//--------------------------
+
+@linkColor:                       #DDD;
+@linkColorHover:                  #EEE;
+
+// Navbar
+// -------------------------
+@navbarCollapseWidth:             979px;
+@navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
+
+@navbarHeight:                    60px;
+@navbarBackgroundHighlight:       #000;
+@navbarBackground:                #F00;
+@navbarBorder:                    #F00;
+
+@navbarText:                      #FFF;
+@navbarLinkColor:                 #FFF;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+
+@navbarBrandColor:                #FFF;
+@navbarLinkColorActive:           #F00;
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 960px grid
+// -------------------------
+@gridColumns:             3;
+@gridColumnWidth:         300px;
+@gridGutterWidth:         30px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+
+// 768px-979px
+@gridColumnWidth768:      228px;
+@gridGutterWidth768:      20px;
+@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * (@gridColumns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
+@fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);
+
+// 768px-979px
+@fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
+@fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
