@@ -462,7 +462,6 @@
     }
 
     .row {
-      width: 960px;
       margin-left: @gridGutterWidth * -1;
       .clearfix();
     }
@@ -485,7 +484,7 @@
 
   }
 
-  .fluid (@fluidGridColumnWidth, @fluidGridGutterWidth) {
+  .fluid (@fluidGridColumnWidth, @fluidGridGutterWidth,@gridGutterWidth,@gridRowWidth) {
 
     .spanX (@index) when (@index > 0) {
       (~".span@{index}") { .span(@index); }
@@ -516,8 +515,8 @@
     }
 
     .row-fluid {
-      width: 960px;
-      margin: 3.125% auto;
+      width: @gridRowWidth;
+      margin: 0 auto @gridGutterWidth auto;
       .clearfix();
       [class*="span"] {
         .input-block-level();
