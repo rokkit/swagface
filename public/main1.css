@@ -637,10 +637,10 @@ input.span1, textarea.span1, .uneditable-input.span1 {
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 14px 20px;
-  margin: 8px 6px ;
+  padding: 24px 24px;
   color: #ffffff;
   background: #ff0000;
+  cursor: pointer;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
@@ -1082,7 +1082,7 @@ input.span1, textarea.span1, .uneditable-input.span1 {
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #ff0000;
+    background-color: #e60000;
   }
   .navbar .nav-collapse .nav.pull-right {
     float: none;
