@@ -9,6 +9,14 @@
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="bootstrap/js/bootstrap-collapse.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+        <script type="text/javascript">
+        $(function(){var sav_w=$(".span1").width();
+            $(".span1").height(sav_w);});
+          $(window).resize(function() {
+            var sav_w=$(".span1").width();
+            $(".span1").height(sav_w);
+          });
+        </script>
         
     </head>
     <body>
@@ -39,14 +47,42 @@
             </div>
           </div>
         <div class="row-fluid">
-          <div class="span1" ><img src="img/img2_c.png" class="img4" style="width: 100%;border-radius: 10px;"></div>
-          <div class="span1" ><img src="img/img4.jpg" class="img4" style="width: 100%;border-radius: 10px;"></div>
-          <div class="span1" ><img src="img/img5.jpg" class="img4" style="width: 100%;border-radius: 10px;"></div>
+          <div class="span1" >
+            <div class="up">
+              <img src="img/img2_c.png">
+            </div>
+          </div>
+          <div class="span1" >
+            <div class="down" >
+              <div class="title">TITLE</div>
+              <div class="content">text of cards</div>
+              <div class="tags"><p>tag1</p></div>
+            </div>
+          </div>
+          <div class="span1" >
+            <div class="comm">
+              <div class="head">header</div>
+              <div class="list">
+                <div class="comment">
+                  Small comment
+                </div>
+                <div class="comment">
+                  this comment will be the bigger then prev
+                </div>
+                <div class="comment">
+                  this comment will be the bigger then prev this comment will be the bigger then prev this comment will be the bigger then prev
+                </div>
+                <div class="comment">
+                  this comment will be the bigger then prev this comment will be the bigger then prev
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row-fluid">
-          <div class="span1" ><img src="img/img_c.png" class="img4" style="width: 100%;border-radius: 10px;"></div>
-          <div class="span1" ><img src="img/img6.jpg" class="img4" style="width: 100%;border-radius: 10px;"></div>
-          <div class="span1" ><img src="img/img7.png" class="img4" style="width: 100%;border-radius: 10px;"></div>
+          <div class="span1" ><div class="up"><img src="img/img_c.png"></div></div>
+          <div class="span1" ><div class="up"><img src="img/img6.jpg"></div></div>
+          <div class="span1" ><div class="up"><img src="img/img7.png"></div></div>
         </div>
     </body>
 </html>
