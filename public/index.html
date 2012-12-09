@@ -11,10 +11,13 @@
         <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
         $(function(){var sav_w=$(".span1").width();
-            $(".span1").height(sav_w);});
+            $(".span1").height(sav_w);
+            $(".autor_img").width(sav_w/5);
+            });
           $(window).resize(function() {
             var sav_w=$(".span1").width();
             $(".span1").height(sav_w);
+            $(".autor_img").width(sav_w/5);
           });
         </script>
         
@@ -61,7 +64,18 @@
           </div>
           <div class="span1" >
             <div class="comm">
-              <div class="head">header</div>
+              <div class="head">
+                <table>
+                  <tr>
+                    <td class="autor_img">
+                      <img src="img/autor_test.jpg">
+                    </td>
+                    <td class="head_discripton">
+                      ANDREY LUKIN
+                    </td>
+                  </tr>
+                </table>
+              </div>
               <div class="list">
                 <div class="comment">
                   Small comment
