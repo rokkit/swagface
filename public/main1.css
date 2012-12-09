@@ -716,20 +716,6 @@ input.span1, textarea.span1, .uneditable-input.span1 {
   margin: 0 0 5px 0;
   background: #333;
 }
-.row-fluid {
-  -webkit-perspective: 1000;
-}
-.span1 .up {
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
-}
-.span1:hover .up {
-  -webkit-transform: rotatey(180deg);
-}
-.face {
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-}
 .pull-right {
   float: right;
 }
