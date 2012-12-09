@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Image:</b>
+  <%= @tile.image %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @tile.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_tile_path(@tile) %> |
+<%= link_to 'Back', tiles_path %>

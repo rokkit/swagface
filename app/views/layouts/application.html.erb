@@ -6,7 +6,48 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+<title>swagface</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="main1.css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="bootstrap/js/bootstrap-collapse.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+        <script type="text/javascript">
+        $(function(){var sav_w=$(".span1").width();
+            $(".span1").height(sav_w);});
+          $(window).resize(function() {
+            var sav_w=$(".span1").width();
+            $(".span1").height(sav_w);
+          });
+        </script>
 <body>
+	<div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="#" id="hidden_brand" style="margin-left: 3px;">SWAGFACE</a>
+                <!-- Everything you want hidden at 940px or less, place within here -->
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li><a href="#">ME</a></li>
+                    <li><a href="#">Mens</a></li>
+                    <li><a href="#">Girls</a></li>
+                    <li><a href="#">Mainstream</a></li>
+                    <li><a href="#">Rooms</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
 <%= yield %>
 

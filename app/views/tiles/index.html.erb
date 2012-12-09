@@ -1,0 +1,24 @@
+
+
+<% count=0 %>
+<% @tiles.each do |tile| %>
+
+       
+       <% if count==0 %>
+        <div class="row-fluid">
+       <% end %>
+
+          <%= render :partial=>'shared/tile',:locals=>{:tile=>tile} %>
+
+       <% if count==2 %>
+        </div>
+       <% end %>
+
+       <% if count == 2 %>
+        <% count=0 %>
+       <% else %>
+        <% count=count+1 %>
+       <% end %>
+
+<% end %>
+<%= link_to 'New Tile', new_tile_path %>
