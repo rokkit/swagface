@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 			elem.flip({
 				direction:'lr',
-				speed: 250,
+				speed: 550,
 				onBefore: function(){
 					// Вставить содержание .sponsorData div  в нажатый
 					// .sponsorFlip div перед началом анимации:
